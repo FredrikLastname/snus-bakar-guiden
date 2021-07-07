@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 a{
     color: whitesmoke;
@@ -14,6 +14,7 @@ body{
     background-color: black;
 }
 footer{
+    font-family: Arial, Helvetica, sans-serif;
     background-color:#131313;
     color: darkgoldenrod;
     margin-top: 2em;
@@ -24,6 +25,9 @@ footer{
     padding-bottom: 1em;
 }
 header{
+    font-family: 'Stardos Stencil', cursive;
+    font-size: small;
+    
     color:darkgoldenrod;
     background-color:#131313;
     top: 0;
@@ -32,14 +36,14 @@ header{
     width: 100%;
 
     text-align: center;
-    padding: 0.5em 1.875em;
+    padding: 1.5em 1.875em;
     /* padding-top: 1em;
     padding-left: 30px;
     padding-right: 30px; */
 }
 button{
-    
-    padding: 0.3em 0.3em;
+    border-radius: 2%;
+    padding: 0.5em 0.5em;
     margin: 1em;
 }
 .wrapper{
@@ -49,7 +53,7 @@ button{
 }
 .wrapper__content{
     
-    margin-top: 4em;
+    margin-top: 6em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,5 +67,53 @@ button{
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5em 2em;
+    padding: 0.7em 2em;
+}
+
+@media (min-width: 480px) {
+    .content {
+        /* display: inline-block; */
+        
+        max-width: 450px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.textblock{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+.textblock_centrerad{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.underrubrik{
+font-weight: bold;
+}
+.textblock li{
+    margin-bottom: 0.8em;
+}
+.textblock .attention{
+    color: rgba(255, 0, 0, 0.705);
+    font-style: italic;
+    margin: 0.8em 0;
+}
+.text-rubrik{
+    font-family: 'Stardos Stencil', cursive;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color:darkgoldenrod;
+    margin-bottom: 0.3em;
+}
+.buttonRow{
+    margin-top: 1em;
+}
+.buttonRow .knapp{
+    
+    display: inline-block;
 }

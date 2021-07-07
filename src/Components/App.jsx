@@ -1,20 +1,30 @@
 import React from "react"
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Footer from "./Footer"
 import Header from "./Header"
-import Preparation from "./Content/Preparation"
+import SnusBakarGuiden from "./SnusBakarGuiden";
+
+
 const App = () =>{
+
+    const darkTheme = createMuiTheme({
+        palette: {
+            type: 'dark',
+        },
+    });
+
     return(
-    <div className="wrapper">
-    <Header />
-
-        <div className="wrapper__content">
-        <div className="content">
-            <Preparation/>
-        </div>
-
-        </div>
-    <Footer/>
-    </div>
+        <ThemeProvider theme={darkTheme}>
+            <div className="wrapper">
+            <Header />
+            <div className="wrapper__content">
+                <div className="content">
+                    <SnusBakarGuiden />
+                </div>
+            </div>
+            <Footer />
+            </div>
+        </ThemeProvider>
     )
 }
 
